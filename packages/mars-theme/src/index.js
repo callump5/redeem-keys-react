@@ -2,6 +2,7 @@ import Theme from "./components";
 import image from "@frontity/html2react/processors/image";
 import iframe from "@frontity/html2react/processors/iframe";
 import link from "@frontity/html2react/processors/link";
+import productHandler from "./components/handlers/prodcut-handler";
 
 const marsTheme = {
   name: "@frontity/mars-theme",
@@ -51,6 +52,7 @@ const marsTheme = {
        */
       processors: [image, iframe, link],
     },
+    handlers: [productHandler],
   },
 };
 

@@ -9,35 +9,13 @@ const settings = {
   },
   "packages": [
     {
-      "name": "@frontity/mars-theme",
+      "name": "redeem-keys-frontity",
       "state": {
         "theme": {
-          "menu": [
-            [
-              "Home",
-              "/"
-            ],
-            [
-              "Nature",
-              "/category/nature/"
-            ],
-            [
-              "Travel",
-              "/category/travel/"
-            ],
-            [
-              "Japan",
-              "/tag/japan/"
-            ],
-            [
-              "About Us",
-              "/about-us/"
-            ]
-          ],
           "featured": {
-            "showOnList": false,
-            "showOnPost": false
-          }
+            "showOnList": true,
+            "showOnPost": true
+          },
         }
       }
     },
@@ -45,7 +23,22 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "url": "https://test.frontity.org"
+          "url": "https://redeem-keys.com",
+          "headers": {
+            // By default remove this header from the state in the afterSSR
+            "Authorization": "Basic YWFhOmJiYg", 
+          },
+          "postTypes": [
+            {
+              "type": "product",
+              "endpoint": "product",
+              "archive": "/shop/",
+              "params": {
+                "per_page": 15,
+                "_embed": true,
+              },
+            },
+          ],
         }
       }
     },

@@ -13,15 +13,26 @@
   "scripts": {
     "dev": "frontity dev",
     "build": "frontity build",
-    "serve": "frontity serve"
+    "serve": "frontity serve",
+
+    "start": "craco start",
+    "buildcraco": "craco build",
+    "test": "craco test"
   },
   "prettier": {},
   "dependencies": {
+    "@craco/craco": "^6.2.0",
     "@frontity/core": "^1.14.3",
     "@frontity/html2react": "^1.7.0",
     "@frontity/mars-theme": "./packages/mars-theme",
     "@frontity/tiny-router": "^1.4.3",
     "@frontity/wp-source": "^1.11.5",
-    "frontity": "^1.16.1"
+    "frontity": "^1.16.1",
+    "redeem-keys-frontity": "file:packages/redeem-keys-frontity"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.36",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.7"
   }
 }

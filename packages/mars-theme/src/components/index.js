@@ -19,6 +19,9 @@ const Theme = ({ state }) => {
   // Get information about the current URL.
   const data = state.source.get(state.router.link);
 
+  const d = state.source.get('https://redeem-keys.com/wp-json/wp/v2/product')
+   console.log(d);
+   console.log(data);
   return (
     <>
       {/* Add some metatags to the <head> of the HTML. */}
@@ -44,6 +47,7 @@ const Theme = ({ state }) => {
           <Loading when={data.isFetching} />
           <List when={data.isArchive} />
           <Post when={data.isPostType} />
+          <Post when={data.isProduct} />
           <PageError when={data.isError} />
         </Switch>
       </Main>
