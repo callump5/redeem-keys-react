@@ -14,7 +14,6 @@
     "dev": "frontity dev",
     "build": "frontity build",
     "serve": "frontity serve",
-
     "start": "craco start",
     "buildcraco": "craco build",
     "test": "craco test"
@@ -27,8 +26,10 @@
     "@frontity/mars-theme": "./packages/mars-theme",
     "@frontity/tiny-router": "^1.4.3",
     "@frontity/wp-source": "^1.11.5",
+    "babel-plugin-macros": "^3.1.0",
     "frontity": "^1.16.1",
-    "redeem-keys-frontity": "file:packages/redeem-keys-frontity"
+    "redeem-keys-frontity": "file:packages/redeem-keys-frontity",
+    "tailwind.macro": "^1.0.0-alpha.10"
   },
   "devDependencies": {
     "autoprefixer": "^9.8.6",
