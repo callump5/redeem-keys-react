@@ -24,10 +24,6 @@ const settings = {
       "state": {
         "source": {
           "url": "https://redeem-keys.com",
-          "headers": {
-            // By default remove this header from the state in the afterSSR
-            "Authorization": "Basic YWFhOmJiYg", 
-          },
           "postTypes": [
             {
               "type": "product",
