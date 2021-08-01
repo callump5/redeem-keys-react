@@ -21,7 +21,7 @@ const Header = ({state}) => {
 const HeaderContainer = styled("div")`
     ${tw`flex flex-row`};
     background: #2D2D2D;
-    padding: 15px;
+    padding: 15px 10px;
     nav:last-child {
         flex-direction: row-reverse !important;
 
@@ -29,12 +29,14 @@ const HeaderContainer = styled("div")`
 `;
 
 const ImageContainer = styled("div")`
-    width: 20%;
-    padding: 0 20px
+    width: 21%;
+    padding: 0 20px;
 `;
 
 const Image = styled('img')`
-    width: 100%;
+    width: 70%;
+    margin: 0 auto;
+
 `;
 
 

@@ -1,4 +1,4 @@
-import { Global, css, connect, styled, Head } from "frontity";
+import { Global, css, connect, styled, Head, action } from "frontity";
 import Switch from "@frontity/components/switch";
 
 import tw from "tailwind.macro";
@@ -9,11 +9,8 @@ import Image from '../assets/images/sport-bg.jpg'
 import List from "./list";
 import Header from "./header";
 
-const Root = ({ state }) => {
+const Root = ({ state , action }) => {
   const data = state.source.get(state.router.link);
-  const source = state.source;
-  // console.log(data, source);
-
   return (
     <>
       <Global styles={[globalStyles, css(ResetStyles)]} />
@@ -54,7 +51,8 @@ const globalStyles = css`
     height: 100vh;
     background-image:  url(${Image});
     background-repeat: no-repeat;
-    background-size:   cover
+    background-size:   cover;
+    background-attachment: fixed;
   }
 `;
 export default connect(Root);
