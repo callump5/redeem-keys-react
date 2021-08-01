@@ -26,8 +26,12 @@
     "@frontity/mars-theme": "./packages/mars-theme",
     "@frontity/tiny-router": "^1.4.3",
     "@frontity/wp-source": "^1.11.5",
+    "animate-css-grid": "^1.4.3",
     "babel-plugin-macros": "^3.1.0",
     "frontity": "^1.16.1",
+    "ngx-animate-css-grid-updated": "0.0.2",
+    "react-flip-toolkit": "^7.0.13",
+    "react-spring": "^9.2.4",
     "redeem-keys-frontity": "file:packages/redeem-keys-frontity",
     "tailwind.macro": "^1.0.0-alpha.10"
   },

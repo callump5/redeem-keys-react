@@ -12,11 +12,11 @@ const ProductThumbnail = ({state, id}) => {
     const url = media.source_url;
     // console.log(width, height);
 
-    const Thumbanil = styled('div')`
-        background-image: url(${url});
-        height: 300px;
-        width: 100%;
-        ${tw` w-full object-fill  rounded-sm bg-cover bg-no-repeat bg-center`}
+    const Thumbanil = styled('img')`
+        // background-image: url();
+        height: 200px;
+        width: auto !important;
+        ${tw` w-full object-fill  bg-contain bg-no-repeat bg-center`};
     `
 
 
@@ -36,7 +36,7 @@ const ProductThumbnail = ({state, id}) => {
 
     return (
         <Container>
-           <Thumbanil></Thumbanil>
+           <Thumbanil src={url}></Thumbanil>
         </Container>
     );
 
